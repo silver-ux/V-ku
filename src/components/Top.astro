@@ -1,0 +1,27 @@
+---
+import image from "@assets/mianvisual.png";
+import Container from "@layouts/Container.astro";
+import Headline from "./Headline.astro";
+---
+
+<div class="top">
+    <img src={image.src} alt="メインの画像" />
+    <div class="headline">
+        <Container>
+            <Headline />
+        </Container>
+    </div>
+</div>
+
+<style>
+    .top {
+        width: 100%;
+        height: 100vh;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+</style>

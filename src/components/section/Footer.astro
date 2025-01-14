@@ -1,0 +1,26 @@
+---
+import Container from "@layouts/Container.astro";
+import logo from "@assets/V区ロゴ/vku_b.png";
+---
+
+<footer>
+    <Container>
+        <div
+            style="height: 80px;display:flex;justify-content: space-between;align-items: center;"
+        >
+            <div class="logo">
+                <img src={logo.src} alt="LOGO" />
+            </div>
+            <p><small>&copy;KANAU-LAB 2025</small></p>
+        </div>
+    </Container>
+</footer>
+
+<style>
+    .logo {
+        height: 100%;
+        img {
+            height: 100%;
+        }
+    }
+</style>
