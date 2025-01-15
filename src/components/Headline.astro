@@ -5,11 +5,24 @@ const { style } = Astro.props;
 ---
 
 <div style={style}>
-    <h1>タイトル</h1>
+    <h1>
+        <span>VTuberやクリエイターの<br />活動を支援するバーチャル区役所</span>
+    </h1>
     <p>
-        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        「案件紹介」だけでなく「制作サポート」や「福祉サポート」など、みなさんの活動に更に寄り添ったサポートができるのがV区の強みです。
     </p>
     <div style="display: flex; justify-content: flex-end;padding-top: 60px;">
         <Button>Discordへ</Button>
     </div>
 </div>
+
+<style>
+    span {
+        background: linear-gradient(transparent 60%, #f2cf39 0%);
+        display: inline;
+        padding: 0 5px 0;
+        background-repeat: no-repeat;
+        /* background-size: 0% 100%;
+        animation: marker 2s ease forwards 1.5s; */
+    }
+</style>

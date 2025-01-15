@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-    scroll-behavior: smooth;
 }
 
 a:link, a:visited, a:active{
@@ -39,10 +38,11 @@ header{
     top: 50%;
     transform: translate(-50%,-50%); */
     color: white;
+    margin-top:600px;
     z-index: 10;
     
     h1{
-        font-size: 100px;
+        font-size: 50px;
     }
     p{
         width: 70%;

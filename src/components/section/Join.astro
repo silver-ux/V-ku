@@ -8,7 +8,78 @@ import Container from "@layouts/Container.astro";
 >
     <Container>
         <div>
-            <Button>参加はこちらから！</Button>
+            <div class="flex">
+                <p>
+                    ①ご本人確認のため、V区のXアカウントのフォローをお願いします。数日以内にフォローバックさせていただきます。
+                </p>
+                <div class="arrow-center">
+                    <div class="arrow"></div>
+                </div>
+                <p>
+                    ②相互フォロー状態になった後、XのDMにて「V区に参加しているDiscordアカウントの名前」をお送りください。
+                </p>
+                <div class="arrow-center">
+                    <div class="arrow"></div>
+                </div>
+                <p>
+                    ③確認が取れ次第、V区のDiscord内で「V区民」ロール(権限)を付与させていただきます。
+                </p>
+            </div>
+            <div class="btns">
+                <button type="button" class="sns">V区のアカウント</button>
+                <Button>参加はこちらから！</Button>
+            </div>
         </div>
     </Container>
 </div>
+
+<style>
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        margin-bottom: 30px;
+        p {
+            width: 25%;
+            background-color: rgb(158, 158, 158);
+            padding: 20px;
+        }
+    }
+
+    .arrow {
+        display: inline-block;
+        width: 50px;
+        height: 20px;
+        background: #000000;
+        clip-path: polygon(
+            0 31%,
+            63.2% 31%,
+            63.2% 0,
+            100% 50%,
+            63.2% 100%,
+            63.2% 69%,
+            0 69%
+        );
+    }
+
+    .arrow-center {
+        display: flex;
+        align-items: center;
+    }
+
+    .sns {
+        color: white;
+        background: #000000;
+        cursor: pointer;
+        margin: 20px 0;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+
+    .btns {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
