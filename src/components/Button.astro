@@ -1,5 +1,10 @@
+---
+import { FaDiscord } from "react-icons/fa";
+---
+
 <button type="button" class="discord-btn">
-    <slot />
+    <FaDiscord size="2rem" />
+    <span><slot /></span>
 </button>
 <style>
     button {
@@ -9,5 +14,11 @@
         border: 1px solid #333;
         cursor: pointer;
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+
+        span {
+            padding: 0 1em;
+        }
     }
 </style>

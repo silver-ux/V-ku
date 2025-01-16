@@ -1,6 +1,7 @@
 ---
 import Button from "@components/Button.astro";
 import Container from "@layouts/Container.astro";
+import { FaTwitter } from "react-icons/fa";
 ---
 
 <div
@@ -26,7 +27,9 @@ import Container from "@layouts/Container.astro";
                 </p>
             </div>
             <div class="btns">
-                <button type="button" class="sns">V区のアカウント</button>
+                <button type="button" class="sns">
+                    <FaTwitter /><span>V区のアカウント</span>
+                </button>
                 <Button>参加はこちらから！</Button>
             </div>
         </div>
@@ -75,6 +78,11 @@ import Container from "@layouts/Container.astro";
         padding: 10px 20px;
         border-radius: 10px;
         border: 1px solid white;
+        display: flex;
+        align-items: center;
+        span {
+            padding: 0 1em;
+        }
     }
 
     .btns {
