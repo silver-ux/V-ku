@@ -1,8 +1,9 @@
 ---
 import { FaDiscord } from "react-icons/fa";
+const { style } = Astro.props;
 ---
 
-<button type="button" class="discord-btn">
+<button type="button" class="discord-btn" style={style}>
     <FaDiscord size="2rem" />
     <span><slot /></span>
 </button>

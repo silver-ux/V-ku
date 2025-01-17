@@ -1,11 +1,11 @@
 ---
-import Header from "@components/Header.astro";
-import Anken from "@components/section/Anken.astro";
-import Footer from "@components/section/Footer.astro";
-import Join from "@components/section/Join.astro";
-import Movie from "@components/section/Movie.astro";
-import Support from "@components/section/Support.astro";
-import Top from "@components/Top.astro";
+import Header from "@components/section/top/Header.astro";
+import Anken from "@components/section/Sec1Anken/Anken.astro";
+import Footer from "@components/section/Footer/Footer.astro";
+import Join from "@components/section/Sec4Join/Join.astro";
+import Movie from "@components/section/Sec2Movie/Movie.astro";
+import Support from "@components/section/Sec3Support/Support.astro";
+import Top from "@components/section/top/Top.astro";
 import Layout from "@layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -45,6 +45,12 @@ import Layout from "@layouts/Layout.astro";
 		border-top: 3px solid #000;
 		border-right: 3px solid #000;
 		transform: translateY(20%) rotate(-45deg);
+	}
+
+	@media screen and (max-width: 650px) {
+		.pagetop {
+			display: none !important;
+		}
 	}
 </style>
 <script>
