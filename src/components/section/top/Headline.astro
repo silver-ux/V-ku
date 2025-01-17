@@ -32,7 +32,8 @@ const { style } = Astro.props;
         padding-top: 150px;
         .top-text {
             h1 {
-                font-size: clamp(28px, 5vw, 50px);
+                /* font-size: clamp(28px, 5vw, 50px); */
+                font-size: clamp(1.75rem, 0.833rem + 3.67vw, 3.125rem);
                 width: 100%;
             }
         }
@@ -53,8 +54,10 @@ const { style } = Astro.props;
     .desc {
         width: min(650px, 80%);
         margin-left: auto;
-        margin-top: clamp(3%, 10%, 30px);
-        font-size: clamp(14px, 2vw, 20px);
+        /* margin-top: clamp(3%, 10%, 30px); */
+        margin-top: min(90px, 20%);
+        /* font-size: clamp(14px, 2vw, 20px); */
+        font-size: clamp(0.875rem, 0.625rem + 1vw, 1.25rem);
         background-color: rgba(0, 0, 0, 0.5);
         padding: 1em 2em;
         border-radius: 10px;
@@ -63,6 +66,9 @@ const { style } = Astro.props;
     @media screen and (max-width: 650px) {
         .btn-place {
             justify-content: center;
+        }
+        .desc {
+            text-align: justify;
         }
     }
 </style>
