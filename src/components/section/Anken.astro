@@ -3,6 +3,7 @@ import Heading from "@components/Heading.astro";
 import Container from "@layouts/Container.astro";
 import ankenIMG from "@assets/vku_ankenka.png";
 import TextBox from "@components/TextBox.astro";
+import Images from "@components/Images.astro";
 ---
 
 <div
@@ -14,9 +15,7 @@ import TextBox from "@components/TextBox.astro";
         <div
             style=" display:flex; flex-direction: column; align-items:center; height:calc(100% - 122px);"
         >
-            <div class="image">
-                <img src={ankenIMG.src} alt="" />
-            </div>
+            <Images src={ankenIMG.src} style="margin-right:auto;" />
             <TextBox
                 style="margin:0 0 0 auto"
                 heading="案件の紹介が受けられます。"
@@ -28,11 +27,9 @@ import TextBox from "@components/TextBox.astro";
 </div>
 
 <style>
-    .image {
-        /* background-color: rgba(250, 235, 215, 0.267); */
+    /* .image {
         width: 50%;
         height: 70%;
-        /* margin-top: 10%;*/
         display: flex;
         align-items: center;
         justify-content: center;
@@ -40,7 +37,7 @@ import TextBox from "@components/TextBox.astro";
         img {
             width: 100%;
         }
-    }
+    } */
     /* .text {
         width: 70%;
         text-align: center;
