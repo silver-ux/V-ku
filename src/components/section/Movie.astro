@@ -2,6 +2,7 @@
 import Heading from "@components/Heading.astro";
 import Container from "@layouts/Container.astro";
 import movieIMG from "@assets/vku_seisakuka.png";
+import TextBox from "@components/TextBox.astro";
 ---
 
 <div
@@ -13,17 +14,11 @@ import movieIMG from "@assets/vku_seisakuka.png";
         <div
             style=" display:flex; align-items:center; height:calc(100% - 122px);"
         >
-            <div class="text">
-                <h3>動画制作などの依頼ができます。</h3>
-                <p>
-                    V区民は格安の価格帯で、切り抜き動画編集・イラスト制作・ホームページ制作などの制作依頼ができます。
-                </p>
-                <p style="text-align: center; margin-top: 10px;">
-                    <small
-                        >※依頼費用が全く無い方向けのプランもご用意しています。
-                    </small>
-                </p>
-            </div>
+            <TextBox
+                heading="動画制作などの依頼ができます。"
+                text="V区民は格安の価格帯で、切り抜き動画編集・イラスト制作・ホームページ制作などの制作依頼ができます。"
+                smallText="※依頼費用が全く無い方向けのプランもご用意しています。"
+            />
             <div class="image">
                 <img src={movieIMG.src} alt="" />
             </div>
@@ -41,11 +36,11 @@ import movieIMG from "@assets/vku_seisakuka.png";
         align-items: center;
         justify-content: center;
         z-index: 2;
-        img{
+        img {
             width: 100%;
         }
     }
-    .text {
+    /* .text {
         width: 70%;
         text-align: center;
         margin-right: -30%;
@@ -57,13 +52,12 @@ import movieIMG from "@assets/vku_seisakuka.png";
         border: 1px solid;
         z-index: 3;
 
-            h3 {
-                padding: 20px;
-                font-size: 24px;
-            }
-            p {
-                text-align: left;
-            }
+        h3 {
+            padding: 20px;
+            font-size: 24px;
         }
-    }
+        p {
+            text-align: left;
+        }
+    } */
 </style>
