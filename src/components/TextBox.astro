@@ -1,8 +1,8 @@
 ---
-const { heading, text, smallText, margin } = Astro.props;
+const { heading, text, smallText, style } = Astro.props;
 ---
 
-<div class="text" style=`${margin}`>
+<div class="text" style={style}>
     <h3>{heading}</h3>
     <p>
         {text}
