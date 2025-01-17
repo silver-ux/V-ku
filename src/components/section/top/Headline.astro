@@ -6,12 +6,12 @@ const { style } = Astro.props;
 
 <div class="headline" style={style}>
     <div class="top-text">
-        <p>
-            <span class="marker">VTuberやクリエイターの</span>
-        </p>
-        <p>
-            <span class="marker">活動を支援するバーチャル区役所</span>
-        </p>
+        <h1>
+            <span class="marker"
+                >VTuberやクリエイターの<br
+                />活動を支援するバーチャル区役所</span
+            >
+        </h1>
     </div>
     <p class="desc">
         「案件紹介」だけでなく「制作サポート」や「福祉サポート」など、みなさんの活動に更に寄り添ったサポートができるのがV区の強みです。
@@ -31,10 +31,9 @@ const { style } = Astro.props;
         place-content: center;
         padding-top: 150px;
         .top-text {
-            p {
+            h1 {
                 font-size: clamp(28px, 5vw, 50px);
                 width: 100%;
-                font-weight: bold;
             }
         }
     }
