@@ -4,20 +4,18 @@ import Container from "@layouts/Container.astro";
 import ankenIMG from "@assets/vku_ankenka.png";
 import TextBox from "@components/TextBox.astro";
 import Images from "@components/Images.astro";
+
+const textCompMargin = "2rem 0 0 auto";
+const margin = "0 auto 0 0";
 ---
 
-<div
-    id="anken"
-    style="width: 100%; height:100vh;padding-bottom: 50px; background-color:rgb(182, 182, 182)"
->
+<div id="anken">
     <Container>
         <Heading>案件</Heading>
-        <div
-            style=" display:flex; flex-direction: column; align-items:center; place-content: center; height:calc(100% - 122px);"
-        >
-            <Images src={ankenIMG.src} style="margin-right:auto;" />
+        <div class="wrapping">
+            <Images src={ankenIMG.src} alt="案件ロゴ" margin={margin} />
             <TextBox
-                style="margin:2rem 0 0 auto"
+                margin={textCompMargin}
                 heading="案件の紹介が受けられます。"
                 text="VTuberの方には「広告宣伝案件」を、クリエイターの方には「提携企業の制作案件」をご紹介します。"
                 smallText="※V区民同士でコラボ、受発注も可能です。"
@@ -25,3 +23,18 @@ import Images from "@components/Images.astro";
         </div>
     </Container>
 </div>
+<style>
+    #anken {
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 50px;
+        background-color: rgb(182, 182, 182);
+    }
+    .wrapping {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+        height: calc(100% - 122px);
+    }
+</style>

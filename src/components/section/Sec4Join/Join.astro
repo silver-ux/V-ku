@@ -4,9 +4,7 @@ import Container from "@layouts/Container.astro";
 import { FaTwitter } from "react-icons/fa";
 ---
 
-<div
-    style="padding:30px 0; text-align: center; background-color: rgb(210, 210, 210);"
->
+<div class="wrapping">
     <Container>
         <div>
             <div class="flex">
@@ -37,6 +35,11 @@ import { FaTwitter } from "react-icons/fa";
 </div>
 
 <style>
+    .wrapping {
+        padding: 30px 0;
+        text-align: center;
+        background-color: rgb(210, 210, 210);
+    }
     .flex {
         display: flex;
         justify-content: space-between;

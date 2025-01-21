@@ -4,26 +4,38 @@ import Container from "@layouts/Container.astro";
 import movieIMG from "@assets/vku_seisakuka.png";
 import TextBox from "@components/TextBox.astro";
 import Images from "@components/Images.astro";
+
+const textCompMargin = "2rem auto 0 0";
+const margin = "0 0 0 auto";
 ---
 
-<div
-    id="movie"
-    style="height:100vh; width:100%;padding-bottom: 50px; background-color:gray;"
->
+<div id="movie">
     <Container>
         <Heading>動画制作などの依頼</Heading>
-        <div
-            style=" display:flex; flex-direction: column-reverse; align-items:center; place-content: center; height:calc(100% - 122px);"
-        >
+        <div class="wrapping">
             <TextBox
-                style="margin: 2rem auto 0 0"
+                margin={textCompMargin}
                 heading="動画制作などの依頼ができます。"
                 text="V区民は格安の価格帯で、切り抜き動画編集・イラスト制作・ホームページ制作などの制作依頼ができます。"
                 smallText="※依頼費用が全く無い方向けのプランもご用意しています。"
             />
-            <Images src={movieIMG.src} style="margin-left:auto;" />
+            <Images src={movieIMG.src} margin={margin} />
         </div>
     </Container>
 </div>
 
-<style></style>
+<style>
+    #movie {
+        height: 100vh;
+        width: 100%;
+        padding-bottom: 50px;
+        background-color: gray;
+    }
+    .wrapping {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        place-content: center;
+        height: calc(100% - 122px);
+    }
+</style>

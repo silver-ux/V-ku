@@ -5,12 +5,9 @@ import Headline from "./Headline.astro";
 ---
 
 <div class="top">
-    <!-- <img src={image.src} alt="メインの画像" /> -->
-    <div style="height: 100%;">
-        <Container>
-            <Headline />
-        </Container>
-    </div>
+    <Container>
+        <Headline />
+    </Container>
 </div>
 
 <style>
@@ -29,6 +26,9 @@ import Headline from "./Headline.astro";
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        .container {
+            height: 100%;
         }
     }
 </style>

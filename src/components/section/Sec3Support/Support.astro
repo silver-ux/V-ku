@@ -4,20 +4,18 @@ import Container from "@layouts/Container.astro";
 import fukushiIMG from "@assets/vku_fukushika.png";
 import TextBox from "@components/TextBox.astro";
 import Images from "@components/Images.astro";
+
+const imagesCompMargin = "0 auto 0 0";
+const textCompMargin = "2rem 0 0 auto";
 ---
 
-<div
-    id="support"
-    style="width: 100%; height:100vh;padding-bottom: 50px; background-color:rgb(182, 182, 182)"
->
+<div id="support">
     <Container>
         <Heading>福祉サポート</Heading>
-        <div
-            style=" display:flex; flex-direction: column; align-items:center; place-content: center; height:calc(100% - 122px);"
-        >
-            <Images src={fukushiIMG.src} style="margin-right:auto;" />
+        <div class="wrapping">
+            <Images src={fukushiIMG.src} margin={imagesCompMargin} />
             <TextBox
-                style="margin:2rem 0 0 auto"
+                margin={textCompMargin}
                 heading="福祉サポートが受けられます。"
                 text="V区民の中には、障害や病気などに向き合いながら活動されている方もいらっしゃると思います。V区福祉課では、提携福祉事業所のサポートをご紹介します。"
                 smallText="※他のV区民に福祉課の利用が知られることはありません。"
@@ -25,3 +23,18 @@ import Images from "@components/Images.astro";
         </div>
     </Container>
 </div>
+<style>
+    #support {
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 50px;
+        background-color: rgb(182, 182, 182);
+    }
+    .wrapping {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+        height: calc(100% - 122px);
+    }
+</style>

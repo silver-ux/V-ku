@@ -5,9 +5,7 @@ import logo from "@assets/V区ロゴ/vku_b.png";
 
 <footer>
     <Container>
-        <div
-            style="height: 80px;display:flex;justify-content: space-between;align-items: center;"
-        >
+        <div class="wrapping">
             <div class="logo">
                 <img src={logo.src} alt="LOGO" />
             </div>
@@ -22,5 +20,11 @@ import logo from "@assets/V区ロゴ/vku_b.png";
         img {
             height: 100%;
         }
+    }
+    .wrapping {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 </style>

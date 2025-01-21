@@ -1,10 +1,10 @@
 ---
 import Button from "@components/Button.astro";
 
-const { style } = Astro.props;
+const fontSize = "clamp(18px, 2vw, 24px)";
 ---
 
-<div class="headline" style={style}>
+<div class="headline">
     <div class="top-text">
         <h1>
             <span class="marker"
@@ -17,7 +17,7 @@ const { style } = Astro.props;
         「案件紹介」だけでなく「制作サポート」や「福祉サポート」など、みなさんの活動に更に寄り添ったサポートができるのがV区の強みです。
     </p>
     <div class="btn-place">
-        <Button style="font-size:clamp(18px, 2vw, 24px)">Discordへ</Button>
+        <Button fontSize={fontSize}>Discordへ</Button>
     </div>
 </div>
 
