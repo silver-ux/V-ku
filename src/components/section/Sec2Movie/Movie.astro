@@ -11,15 +11,14 @@ const margin = "0 0 0 auto";
 
 <div id="movie">
     <Container>
-        <Heading>動画制作などの依頼</Heading>
+        <Heading>2. 動画制作などの依頼</Heading>
         <div class="wrapping">
             <TextBox
-                margin={textCompMargin}
                 heading="動画制作などの依頼ができます。"
                 text="V区民は格安の価格帯で、切り抜き動画編集・イラスト制作・ホームページ制作などの制作依頼ができます。"
                 smallText="※依頼費用が全く無い方向けのプランもご用意しています。"
             />
-            <Images src={movieIMG.src} margin={margin} />
+            <Images src={movieIMG.src} />
         </div>
     </Container>
 </div>
@@ -29,13 +28,14 @@ const margin = "0 0 0 auto";
         height: 100vh;
         width: 100%;
         padding-bottom: 50px;
-        background-color: gray;
+        /* background-color: gray; */
+        border-bottom: 1px solid #333;
     }
     .wrapping {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        place-content: center;
+        justify-content: space-around;
         height: calc(100% - 122px);
     }
 </style>

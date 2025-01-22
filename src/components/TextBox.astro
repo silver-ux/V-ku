@@ -4,7 +4,7 @@ const { heading, text, smallText, margin } = Astro.props;
 
 <div class="text">
     <h3>{heading}</h3>
-    <p>
+    <p class="text-content">
         {text}
     </p>
     <p class="bottom">
@@ -14,7 +14,7 @@ const { heading, text, smallText, margin } = Astro.props;
 
 <style define:vars={{ margin }}>
     .text {
-        width: 70%;
+        width: 90%;
         text-align: center;
         margin: var(--margin);
         background-color: thistle;
@@ -28,7 +28,7 @@ const { heading, text, smallText, margin } = Astro.props;
             font-size: 24px;
             text-decoration: underline;
         }
-        p {
+        .text-content {
             text-align: left;
         }
     }

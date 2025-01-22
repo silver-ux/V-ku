@@ -13,9 +13,8 @@ const textCompMargin = "2rem 0 0 auto";
     <Container>
         <Heading>福祉サポート</Heading>
         <div class="wrapping">
-            <Images src={fukushiIMG.src} margin={imagesCompMargin} />
+            <Images src={fukushiIMG.src} />
             <TextBox
-                margin={textCompMargin}
                 heading="福祉サポートが受けられます。"
                 text="V区民の中には、障害や病気などに向き合いながら活動されている方もいらっしゃると思います。V区福祉課では、提携福祉事業所のサポートをご紹介します。"
                 smallText="※他のV区民に福祉課の利用が知られることはありません。"
@@ -28,13 +27,14 @@ const textCompMargin = "2rem 0 0 auto";
         width: 100%;
         height: 100vh;
         padding-bottom: 50px;
-        background-color: rgb(182, 182, 182);
+        /* background-color: rgb(182, 182, 182); */
+        border-bottom: 1px solid #333;
     }
     .wrapping {
         display: flex;
         flex-direction: column;
         align-items: center;
-        place-content: center;
+        justify-content: space-around;
         height: calc(100% - 122px);
     }
 </style>
