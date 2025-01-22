@@ -1,56 +1,55 @@
 ---
 import Button from "@components/Button.astro";
 import Container from "@layouts/Container.astro";
-import { FaTwitter } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
 ---
 
 <div class="wrapping">
     <Container>
-        <div>
-            <div class="flex">
-                <p>
-                    ①ご本人確認のため、V区のXアカウントのフォローをお願いします。数日以内にフォローバックさせていただきます。
-                </p>
-                <div class="arrow-center">
-                    <div class="arrow"></div>
-                </div>
-                <p>
-                    ②相互フォロー状態になった後、XのDMにて「V区に参加しているDiscordアカウントの名前」をお送りください。
-                </p>
-                <div class="arrow-center">
-                    <div class="arrow"></div>
-                </div>
-                <p>
-                    ③確認が取れ次第、V区のDiscord内で「V区民」ロール(権限)を付与させていただきます。
-                </p>
+        <div class="flex">
+            <p>
+                ①ご本人確認のため、V区のXアカウントのフォローをお願いします。数日以内にフォローバックさせていただきます。
+            </p>
+            <div class="arrow-center">
+                <div class="arrow"></div>
             </div>
-            <div class="btns">
-                <button type="button" class="sns">
-                    <FaTwitter /><span>V区のアカウント</span>
-                </button>
-                <Button>参加はこちらから！</Button>
+            <p>
+                ②相互フォロー状態になった後、XのDMにて「V区に参加しているDiscordアカウントの名前」をお送りください。
+            </p>
+            <div class="arrow-center">
+                <div class="arrow"></div>
             </div>
+            <p>
+                ③確認が取れ次第、V区のDiscord内で「V区民」ロール(権限)を付与させていただきます。
+            </p>
+        </div>
+        <div class="btns">
+            <button type="button" class="sns">
+                <RiTwitterXFill size="1rem" /><span>V区のアカウント</span>
+            </button>
+            <Button>参加はこちらから！</Button>
         </div>
     </Container>
 </div>
 
 <style>
     .wrapping {
-        padding: 30px 0;
+        padding: 4rem 0 30px 0;
         text-align: center;
         /* background-color: rgb(210, 210, 210); */
-        border-bottom: 1px solid #333;
     }
     .flex {
         display: flex;
         justify-content: space-between;
         text-align: left;
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
         p {
             width: 25%;
             background-color: rgb(158, 158, 158);
+            font-size: var(--normal);
             padding: 20px;
-            border-radius: 1rem;
+            border-radius: 2px;
+            border: 1px solid #333;
         }
     }
 
@@ -81,8 +80,8 @@ import { FaTwitter } from "react-icons/fa";
         cursor: pointer;
         margin: 20px 0;
         padding: 10px 20px;
-        border-radius: 10px;
-        border: 1px solid white;
+        border-radius: 2px;
+        border: 1px solid #333;
         display: flex;
         align-items: center;
         span {

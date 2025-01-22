@@ -51,18 +51,20 @@ const fontSize = "clamp(18px, 2vw, 24px)";
     .btn-place {
         display: flex;
         justify-content: end;
-        padding-top: 60px;
+        padding-top: 45px;
     }
     .desc {
-        width: min(650px, 80%);
+        width: 80%;
         margin-left: auto;
         /* margin-top: clamp(3%, 10%, 30px); */
-        margin-top: min(30px, 20%);
+        margin-top: min(45px, 20%);
         /* font-size: clamp(14px, 2vw, 20px); */
-        font-size: clamp(0.875rem, 0.625rem + 1vw, 1.25rem);
+        /* font-size: clamp(0.875rem, 0.625rem + 1vw, 1.25rem); */
+        font-size: var(--normal20);
         background-color: rgba(0, 0, 0, 0.5);
         padding: 1em 2em;
-        border-radius: 10px;
+        border: 1px solid whitesmoke;
+        border-radius: 2px;
     }
 
     @media screen and (max-width: 650px) {
@@ -71,6 +73,7 @@ const fontSize = "clamp(18px, 2vw, 24px)";
         }
         .desc {
             text-align: justify;
+            width: 100%;
         }
     }
 </style>

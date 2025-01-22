@@ -11,7 +11,7 @@ const margin = "0 auto 0 0";
 
 <div id="anken">
     <Container>
-        <Heading>1. 案件</Heading>
+        <Heading>案件</Heading>
         <div class="wrapping">
             <Images src={ankenIMG.src} alt="案件ロゴ" />
             <TextBox
@@ -25,16 +25,13 @@ const margin = "0 auto 0 0";
 <style>
     #anken {
         width: 100%;
-        height: 100vh;
-        padding-bottom: 50px;
+        padding: 4rem 0;
         /* background-color: rgb(182, 182, 182); */
-        border-bottom: 1px solid #333;
     }
     .wrapping {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        height: calc(100% - 122px);
     }
 </style>
