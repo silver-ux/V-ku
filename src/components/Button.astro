@@ -8,12 +8,11 @@ const { padding } = Astro.props;
     <span><slot /></span>
 </button>
 <style define:vars={{ padding }}>
-    button {
+    .discord-btn {
         background-color: #b093ff;
         padding: var(--padding);
         font-size: 20px;
         border: 1px solid #333;
-        font-weight: bold;
         cursor: pointer;
         border-radius: 2px;
         display: inline-flex;
