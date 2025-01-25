@@ -6,6 +6,7 @@ import TextBox from "@components/TextBox.astro";
 import Images from "@components/Images.astro";
 ---
 
+<!-- ankenのpaddingに変化あり -->
 <div id="anken">
     <Container>
         <Heading>案件</Heading>
@@ -29,5 +30,11 @@ import Images from "@components/Images.astro";
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1280px) {
+        #anken {
+            padding-top: 6rem;
+        }
     }
 </style>

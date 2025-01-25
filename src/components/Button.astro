@@ -1,16 +1,15 @@
 ---
 import { FaDiscord } from "react-icons/fa";
-const { padding } = Astro.props;
 ---
 
 <button type="button" class="discord-btn">
     <FaDiscord size="2rem" />
     <span><slot /></span>
 </button>
-<style define:vars={{ padding }}>
+<style>
     .discord-btn {
         background-color: #b093ff;
-        padding: var(--padding);
+        padding: 15px 25px;
         font-size: 20px;
         border: 1px solid #333;
         cursor: pointer;

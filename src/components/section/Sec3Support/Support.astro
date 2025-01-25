@@ -4,11 +4,9 @@ import Container from "@layouts/Container.astro";
 import fukushiIMG from "@assets/vku_fukushika.png";
 import TextBox from "@components/TextBox.astro";
 import Images from "@components/Images.astro";
-
-const imagesCompMargin = "0 auto 0 0";
-const textCompMargin = "2rem 0 0 auto";
 ---
 
+<!-- Supportのpaddingに変化あり -->
 <div id="support">
     <Container>
         <Heading>福祉サポート</Heading>
@@ -33,5 +31,11 @@ const textCompMargin = "2rem 0 0 auto";
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1280px) {
+        #support {
+            padding-top: 6rem;
+        }
     }
 </style>

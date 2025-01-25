@@ -4,6 +4,7 @@ import Container from "@layouts/Container.astro";
 import { RiTwitterXFill } from "react-icons/ri";
 ---
 
+<!-- サイズの変化なし -->
 <div class="wrapping">
     <Container>
         <div class="flex">
@@ -11,9 +12,11 @@ import { RiTwitterXFill } from "react-icons/ri";
                 ①ご本人確認のため、V区のXアカウントのフォローをお願いします。数日以内にフォローバックさせていただきます。
             </p>
             <p class="arrow-bottom">↓</p>
+            <p class="arrow-right">→</p>
             <p class="text">
                 ②相互フォロー状態になった後、XのDMにて「V区に参加しているDiscordアカウントの名前」をお送りください。
             </p>
+            <p class="arrow-right">→</p>
             <p class="arrow-bottom">↓</p>
 
             <p class="text">
@@ -33,7 +36,6 @@ import { RiTwitterXFill } from "react-icons/ri";
     .wrapping {
         padding: 4rem 0 2rem 0;
         text-align: center;
-        /* background-color: rgb(210, 210, 210); */
     }
     .flex {
         text-align: left;
@@ -41,7 +43,7 @@ import { RiTwitterXFill } from "react-icons/ri";
         .text {
             width: 100%;
             background-color: rgb(218, 218, 218);
-            font-size: 4vw;
+            font-size: 16px;
             padding: 20px;
             border-radius: 2px;
             border: 1px solid #333;
@@ -53,7 +55,13 @@ import { RiTwitterXFill } from "react-icons/ri";
         text-align: center;
         padding: 1rem 0;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 32px;
+    }
+
+    .arrow-right {
+        display: none;
+        text-align: center;
+        font-weight: bold;
     }
 
     .sns {
@@ -75,5 +83,24 @@ import { RiTwitterXFill } from "react-icons/ri";
         display: inline-flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        .flex {
+            display: flex;
+        }
+        .arrow-bottom {
+            display: none;
+        }
+        .arrow-right {
+            display: block;
+            padding: 1rem;
+            font-size: 42px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
     }
 </style>

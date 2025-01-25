@@ -20,17 +20,37 @@ const { heading, text, smallText } = Astro.props;
 
         h3 {
             padding-bottom: 10px;
-            font-size: 5vw;
+            /* 32 ~ 28px */
+            font-size: clamp(1.125rem, 0.762rem + 1.55vw, 2rem);
             padding-left: 1em;
         }
         .text-content {
-            font-size: 3vw;
+            /* 14 ~ 20px */
+            font-size: clamp(0.875rem, 0.72rem + 0.66vw, 1.25rem);
             text-align: center;
         }
     }
     .bottom {
         text-align: center;
         margin-top: 10px;
-        font-size: 2.5vw;
+        /* 12 ~ 16px */
+        font-size: clamp(0.75rem, 0.646rem + 0.44vw, 1rem);
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+        .text {
+            h3 {
+                /* font-size: 32px; */
+            }
+            .text-content {
+                /* font-size: 20px; */
+            }
+        }
+        .bottom {
+            margin-top: 10px;
+            /* font-size: 16px; */
+        }
     }
 </style>

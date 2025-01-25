@@ -4,11 +4,9 @@ import Container from "@layouts/Container.astro";
 import movieIMG from "@assets/vku_seisakuka.png";
 import TextBox from "@components/TextBox.astro";
 import Images from "@components/Images.astro";
-
-const textCompMargin = "2rem auto 0 0";
-const margin = "0 0 0 auto";
 ---
 
+<!-- movieのpaddingに変化あり -->
 <div id="movie">
     <Container>
         <Heading>動画制作などの依頼</Heading>
@@ -27,12 +25,16 @@ const margin = "0 0 0 auto";
     #movie {
         width: 100%;
         padding-top: 4rem;
-        /* background-color: gray; */
     }
     .wrapping {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
+    }
+    @media screen and (min-width: 1280px) {
+        #movie {
+            padding-top: 6rem;
+        }
     }
 </style>

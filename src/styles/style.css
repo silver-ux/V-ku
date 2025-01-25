@@ -1,13 +1,21 @@
 /* モバイル
-h1: 7vw
-h2: 6vw
-h3: 5vw
-headlineP: 4vw
-textboxP: 3vw
-small: 2.5vw
+h1: 7vw　26px
+h2: 6vw 24px
+h3: 5vw 18px
+headlineP: 4vw 16px
+textboxP: 3vw 14px
+small: 2.5vw 12px
 ボタン: 20px */
 
-/* タブレット */
+/* タブレット 768px
+    h2: 5vw
+    h3: 3.5vw
+    textboxP: 2.5vw
+*/
+
+/* デスクトップ1280px 
+    h1: 48px
+*/
 
 *, *::before, *::after{
     padding: 0;
