@@ -5,21 +5,21 @@ import { RiTwitterXFill } from "react-icons/ri";
 ---
 
 <!-- サイズの変化なし -->
-<div class="wrapping">
+<div class="join-wrapping">
     <Container>
-        <div class="flex">
-            <p class="text">
+        <div class="flow-text-wrapper">
+            <p class="join-text">
                 ①ご本人確認のため、V区のXアカウントのフォローをお願いします。数日以内にフォローバックさせていただきます。
             </p>
             <p class="arrow-bottom">↓</p>
             <p class="arrow-right">→</p>
-            <p class="text">
+            <p class="join-text">
                 ②相互フォロー状態になった後、XのDMにて「V区に参加しているDiscordアカウントの名前」をお送りください。
             </p>
             <p class="arrow-right">→</p>
             <p class="arrow-bottom">↓</p>
 
-            <p class="text">
+            <p class="join-text">
                 ③確認が取れ次第、V区のDiscord内で「V区民」ロール(権限)を付与させていただきます。
             </p>
         </div>
@@ -33,14 +33,14 @@ import { RiTwitterXFill } from "react-icons/ri";
 </div>
 
 <style>
-    .wrapping {
+    .join-wrapping {
         padding: 4rem 0 2rem 0;
         text-align: center;
     }
-    .flex {
+    .flow-text-wrapper {
         text-align: left;
         margin-bottom: 3rem;
-        .text {
+        .join-text {
             width: 100%;
             background-color: rgb(218, 218, 218);
             font-size: 16px;
@@ -86,18 +86,20 @@ import { RiTwitterXFill } from "react-icons/ri";
     }
 
     @media screen and (min-width: 768px) {
-        .flex {
+        .flow-text-wrapper {
             display: flex;
+            width: 100%;
         }
         .arrow-bottom {
             display: none;
         }
         .arrow-right {
-            display: block;
-            padding: 1rem;
-            font-size: 42px;
             display: flex;
             align-items: center;
+            justify-content: center;
+            width: 20%;
+            padding: 1rem;
+            font-size: 42px;
         }
     }
 
