@@ -18,6 +18,9 @@ small: 2.5vw 12px
     h1: 48px
 */
 
+*{
+    scroll-behavior: smooth;
+}
 a:link, a:visited, a:active{
     color: white;
     text-decoration: none;
