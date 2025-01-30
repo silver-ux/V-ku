@@ -7,7 +7,9 @@ import Form from "@components/supportPage/Form.astro";
 ---
 
 <Layout>
-    <Header />
+    <div>
+        <Header />
+    </div>
     <main>
         <h1>健康福祉課</h1>
         <p class="support-text">
@@ -30,6 +32,16 @@ import Form from "@components/supportPage/Form.astro";
     </main>
 </Layout>
 <style>
+    div {
+        width: 100%;
+        header {
+            background-color: rgba(0, 0, 0, 0.65);
+            .container {
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+    }
+
     main {
         padding-top: 80px;
         text-align: center;
