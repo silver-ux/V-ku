@@ -4,8 +4,8 @@ import logo from "@assets/V区ロゴ/vku_w_width.png";
 ---
 
 <div id="hamburger">
-    <span></span>
-    <span></span>
+    <span class="span1"></span>
+    <span class="span2"></span>
 </div>
 
 <ul id="nav">
@@ -43,6 +43,7 @@ import logo from "@assets/V区ロゴ/vku_w_width.png";
         }
 
         nav?.classList.toggle("active");
+        ham.classList.toggle("close");
     });
 
     nav?.addEventListener("click", () => {
@@ -52,6 +53,7 @@ import logo from "@assets/V区ロゴ/vku_w_width.png";
             return;
         }
         nav.classList.remove("active");
+        ham?.classList.remove("close");
     });
 </script>
 <style>
@@ -92,8 +94,8 @@ import logo from "@assets/V区ロゴ/vku_w_width.png";
         flex-direction: column;
         justify-content: space-around;
         place-content: center;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         padding: 12px;
         background-color: black;
         position: fixed;
@@ -104,10 +106,28 @@ import logo from "@assets/V区ロゴ/vku_w_width.png";
 
         span {
             display: block;
-            margin: 5px 0;
+            margin: 3px 0;
             height: 2px;
             width: 100%;
             background-color: white;
+        }
+    }
+    #hamburger.close {
+        padding: 0;
+        transform-origin: top left;
+        span {
+            margin: 0;
+            width: 50%;
+        }
+        .span1 {
+            position: absolute;
+            left: 10px;
+            transform: rotate(45deg);
+        }
+        .span2 {
+            transform: rotate(-45deg);
+            position: absolute;
+            right: 10px;
         }
     }
 
