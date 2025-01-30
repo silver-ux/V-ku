@@ -6,9 +6,9 @@ import logo from "@assets/V区ロゴ/vku_b.png";
 <footer>
     <Container>
         <div class="footer-wrapping">
-            <div class="footer-logo">
+            <a href="/" class="footer-logo">
                 <img src={logo.src} alt="LOGO" />
-            </div>
+            </a>
             <p><small>&copy;KANAU-LAB 2025</small></p>
         </div>
     </Container>
@@ -17,12 +17,17 @@ import logo from "@assets/V区ロゴ/vku_b.png";
 <style>
     footer {
         border-top: 1px solid #333;
+        background-color: rgba(0, 0, 0, 0.2);
     }
     .footer-logo {
         height: 100%;
+        transition: transform 0.5s ease;
         img {
             height: 100%;
         }
+    }
+    .footer-logo:hover {
+        transform: scale(1.1);
     }
     .footer-wrapping {
         height: 80px;
