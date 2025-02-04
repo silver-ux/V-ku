@@ -7,7 +7,7 @@ import Images from "@components/Images.astro";
 ---
 
 <!-- Supportのpaddingに変化あり -->
-<div id="support">
+<section id="support">
     <Container>
         <Heading>福祉サポート</Heading>
         <div class="support-wrapping">
@@ -20,7 +20,7 @@ import Images from "@components/Images.astro";
         </div>
         <a class="to-support-page" href="/support">V区健康福祉課</a>
     </Container>
-</div>
+</section>
 <style>
     #support {
         width: 100%;
@@ -40,7 +40,10 @@ import Images from "@components/Images.astro";
         padding: 15px 30px;
         font-size: 20px;
         border-radius: 2px;
-        border: 1px solid black;
+        /* background-color: rgb(81, 60, 241); */
+        color: rgb(56, 95, 224);
+        text-decoration: underline;
+        font-weight: bold;
     }
 
     @media screen and (min-width: 1280px) {
