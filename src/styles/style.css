@@ -1,5 +1,5 @@
 /* モバイル
-375 ~ 1280
+375 ~ 900
 h1: 7vw　26px weight 800
 h2: 6vw 24px
 h3: 5vw 18px
@@ -8,22 +8,19 @@ textboxP: 3vw 14px
 small: 2.5vw 12px
 ボタン: 20px */
 
-/* タブレット 768px
-    h2: 5vw
-    h3: 3.5vw
-    textboxP: 2.5vw
-*/
 
-/* デスクトップ1280px 
-    h1: 48px
-*/
 
 *{
     scroll-behavior: smooth;
 }
-a:link, a:visited, a:active{
+/* a:link, a:visited, a:active{
     color: white;
     text-decoration: none;
+} */
+a{
+    color: red;
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 header{
@@ -32,21 +29,25 @@ header{
     z-index: 3;
 }
 
-:root {
-    --normal: 16px;
-    --normal20: 20px;
-}
-
 h1{
     font-weight: 800;
+    /* 24 ~ 45px */
+    font-size: clamp(1.5rem, 0.563rem + 4vw, 2.813rem);
 }
 h2{
     font-weight: 700;
+    /* 20 ~ 26px */
+    font-size: clamp(1.25rem, 0.982rem + 1.14vw, 1.625rem);
 }
 h3{
     font-weight:600;
+    /* 18 ~ 24px */
+    font-size: clamp(1.125rem, 0.857rem + 1.14vw, 1.5rem);
 }
 p{
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.75;
+    letter-spacing: 1px;
 }
-/* responsive 650px */
+    /* responsive 650px */

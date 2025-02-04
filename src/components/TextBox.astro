@@ -14,43 +14,32 @@ const { heading, text, smallText } = Astro.props;
 
 <style>
     .text-wrap {
-        width: 90%;
+        width: 93%;
         text-align: center;
         margin-top: 1.5rem;
 
         h3 {
             padding-bottom: 10px;
             /* 28 ~ 30px */
-            font-size: clamp(1.75rem, 1.698rem + 0.22vw, 1.875rem);
             padding-left: 1em;
         }
         .text-content {
             /* 14 ~ 16px */
-            font-size: clamp(0.875rem, 0.823rem + 0.22vw, 1rem);
-            text-align: center;
+            text-align: justify;
         }
     }
     .bottom {
         text-align: center;
         margin-top: 10px;
         /* 12 ~ 16px */
-        font-size: clamp(0.75rem, 0.646rem + 0.44vw, 1rem);
+        font-size: 12px;
     }
 
     @media screen and (min-width: 768px) {
+        .text-wrap {
+            width: 59%;
+        }
     }
     @media screen and (min-width: 1280px) {
-        .text-wrap {
-            h3 {
-                /* font-size: 32px; */
-            }
-            .text-content {
-                /* font-size: 20px; */
-            }
-        }
-        .bottom {
-            margin-top: 10px;
-            /* font-size: 16px; */
-        }
     }
 </style>

@@ -31,12 +31,11 @@ import Button from "@components/Button.astro";
         .main-text {
             padding: 100px 0 60px 0;
             h1 {
-                /* font-size: 26px; */
-                /* 26 ~ 48px, 375 ~ 1280 */
-                font-size: clamp(1.625rem, 1.055rem + 2.43vw, 3rem);
+                /* 24 ~ 45px, 375 ~ 1280 */
                 line-height: 1.5;
-                width: 95%;
+                width: 90%;
                 text-shadow: 2px 2px 0 black;
+                margin: 0 auto;
             }
         }
     }
@@ -59,7 +58,9 @@ import Button from "@components/Button.astro";
         width: 100%;
         /* font-size: 16px; */
         /* 16 ~ 20 */
-        font-size: clamp(1rem, 0.896rem + 0.44vw, 1.25rem);
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.3px;
         text-align: justify;
         background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
@@ -119,7 +120,7 @@ import Button from "@components/Button.astro";
                 }
             }
             .main-desc {
-                width: 75%;
+                width: 64%;
                 margin-right: 0;
                 /* font-size: 20px; */
                 text-align: justify;
