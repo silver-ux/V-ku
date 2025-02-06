@@ -26,10 +26,12 @@ import Button from "@components/Button.astro";
         height: 100%;
         /* padding-top: 80px; */
         /* 80 ~ 90 */
-        padding-top: clamp(5rem, 4.741rem + 1.1vw, 5.625rem);
+        /* padding-top: clamp(5rem, 4.741rem + 1.1vw, 5.625rem); */
         position: relative;
+        display: grid;
+        place-content: center;
         .main-text {
-            padding: 100px 0 60px 0;
+            padding: 50px 0 60px 0;
             h1 {
                 /* 24 ~ 45px, 375 ~ 1280 */
                 line-height: 1.5;
@@ -51,9 +53,8 @@ import Button from "@components/Button.astro";
     }
     .main-desc {
         width: 100%;
-        /* 16 ~ 20 */
         font-weight: 400;
-        font-size: 16px;
+        font-size: clamp(0.875rem, 0.786rem + 0.38vw, 1rem);
         letter-spacing: 0.3px;
         text-align: justify;
         background-color: rgba(0, 0, 0, 0.5);
@@ -64,7 +65,6 @@ import Button from "@components/Button.astro";
     /* タブレット */
     @media screen and (min-width: 768px) {
         .main-wrap {
-            /* padding-top: 90px; */
             .main-text {
                 padding: 100px 0 60px 0;
                 h1 {
