@@ -50,4 +50,11 @@ p{
     line-height: 1.75;
     letter-spacing: 1px;
 }
+
+.marker {
+    background: linear-gradient(transparent 60%, #f2cf39 0%);
+    display: inline;
+    padding: 0 5px 0;
+    background-repeat: no-repeat;
+}
     /* responsive 650px */
