@@ -45,10 +45,10 @@ h3{
     font-size: clamp(1.125rem, 0.857rem + 1.14vw, 1.5rem);
 }
 p{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.75;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .marker {
