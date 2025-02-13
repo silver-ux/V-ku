@@ -2,26 +2,58 @@
 import Button from "@components/Button.astro";
 import Container from "@layouts/Container.astro";
 import { RiTwitterXFill } from "react-icons/ri";
+import { TbCircleNumber1Filled } from "react-icons/tb";
+import { TbCircleNumber2Filled } from "react-icons/tb";
+import { TbCircleNumber3Filled } from "react-icons/tb";
+import { ImArrowRight } from "react-icons/im";
+import { ImArrowDown } from "react-icons/im";
 ---
 
 <!-- サイズの変化なし -->
 <section class="join-wrapping">
     <Container>
         <div class="flow-text-wrapper">
-            <p class="join-text">
-                ①ご本人確認のため、V区のXアカウントのフォローをお願いします。数日以内にフォローバックさせていただきます。
-            </p>
-            <p class="arrow-bottom">↓</p>
-            <p class="arrow-right">→</p>
-            <p class="join-text">
-                ②相互フォロー状態になった後、XのDMにて「V区に参加しているDiscordアカウントの名前」をお送りください。
-            </p>
-            <p class="arrow-right">→</p>
-            <p class="arrow-bottom">↓</p>
+            <div class="join-text-wrap">
+                <h4>
+                    <TbCircleNumber1Filled
+                        size="1.8rem"
+                        color="#ed2626"
+                        style={{ marginRight: "10px" }}
+                    />Xのフォロー
+                </h4>
+                <p class="join-text">
+                    ご本人確認のため、V区のXアカウントのフォローをお願いします。数日以内にフォローバックさせていただきます。
+                </p>
+            </div>
+            <p class="arrow-bottom"><ImArrowDown /></p>
+            <p class="arrow-right"><ImArrowRight size="5rem" /></p>
+            <div class="join-text-wrap">
+                <h4>
+                    <TbCircleNumber2Filled
+                        size="1.8rem"
+                        color="#ed2626"
+                        style={{ marginRight: "10px" }}
+                    />Discord名を送る
+                </h4>
+                <p class="join-text">
+                    相互フォロー状態になった後、XのDMにて「V区に参加しているDiscordアカウントの名前」をお送りください。
+                </p>
+            </div>
+            <p class="arrow-right"><ImArrowRight size="5rem" /></p>
+            <p class="arrow-bottom"><ImArrowDown /></p>
 
-            <p class="join-text">
-                ③確認が取れ次第、V区のDiscord内で「V区民」ロール(権限)を付与させていただきます。
-            </p>
+            <div class="join-text-wrap">
+                <h4>
+                    <TbCircleNumber3Filled
+                        size="1.8rem"
+                        color="#ed2626"
+                        style={{ marginRight: "10px" }}
+                    />権限付与
+                </h4>
+                <p class="join-text">
+                    確認が取れ次第、V区のDiscord内で「V区民」ロール(権限)を付与させていただきます。
+                </p>
+            </div>
         </div>
         <div class="btns">
             <button type="button" class="sns">
@@ -37,25 +69,42 @@ import { RiTwitterXFill } from "react-icons/ri";
         padding: 4rem 0 2rem 0;
         text-align: center;
     }
+
     .flow-text-wrapper {
         text-align: left;
         margin-bottom: 3rem;
-        .join-text {
+
+        .join-text-wrap {
             width: 100%;
-            background-color: rgb(218, 218, 218);
-            box-shadow: 0px 0px 15px 4px #777777;
-            font-size: 16px;
-            padding: 20px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
             border-radius: 2px;
-            text-align: justify;
+            padding: 20px;
+            box-shadow: 2px 2px 5px 0px #777777;
+
+            h4 {
+                text-align: left;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                margin: 1rem 0;
+            }
+            .join-text {
+                text-align: justify;
+                font-size: 16px;
+                text-align: justify;
+            }
         }
     }
 
     .arrow-bottom {
         text-align: center;
-        padding: 1rem 0;
         font-weight: bold;
-        font-size: 32px;
+        font-size: 50px;
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .arrow-right {
@@ -97,8 +146,7 @@ import { RiTwitterXFill } from "react-icons/ri";
             align-items: center;
             justify-content: center;
             width: 20%;
-            padding: 1rem;
-            font-size: 42px;
+            padding: 0 1rem;
         }
     }
 
