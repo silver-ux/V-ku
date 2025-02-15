@@ -1,0 +1,57 @@
+---
+import Heading from "@components/Heading.astro";
+import Container from "@layouts/Container.astro";
+import ankenIMG from "@assets/vku_ankenka.png";
+
+import ImagesBeta from "@components/ImagesBeta.astro";
+import TextBoxBeta from "@components/TextBoxBeta.astro";
+import HeadingBeta from "@components/HeadingBeta.astro";
+---
+
+<!-- ankenのpaddingに変化あり -->
+<section id="anken">
+    <Container>
+        <HeadingBeta>
+            <ImagesBeta src={ankenIMG.src} alt="案件ロゴ" />
+            案件</HeadingBeta
+        >
+        <div class="anken-wrapping">
+            <TextBoxBeta
+                heading="案件の紹介が受けられます。"
+                smallText="※V区民同士でコラボ、受発注も可能です。"
+            >
+                <li>
+                    VTuberの方には「<b>広告宣伝案件</b>」ををご紹介します。
+                </li>
+                <li>
+                    クリエイターの方には「<b>提携企業の制作案件</b
+                    >」ををご紹介します。
+                </li>
+            </TextBoxBeta>
+        </div>
+    </Container>
+</section>
+<style>
+    #anken {
+        width: 100%;
+        padding-top: 4rem;
+    }
+    .anken-wrapping {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 2rem;
+        ul {
+            li {
+                background-color: transparent;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        #anken {
+            padding-top: 6rem;
+        }
+    }
+</style>

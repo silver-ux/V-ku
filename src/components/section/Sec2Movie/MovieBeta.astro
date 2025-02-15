@@ -1,0 +1,85 @@
+---
+import Container from "@layouts/Container.astro";
+import movieIMG from "@assets/vku_seisakuka.png";
+import homepage from "@assets/homepage.png";
+import ImagesBeta from "@components/ImagesBeta.astro";
+import illust from "@assets/illust.png";
+import movieedit from "@assets/movie-edit.png";
+import HeadingBeta from "@components/HeadingBeta.astro";
+import TextBoxBeta from "@components/TextBoxBeta.astro";
+---
+
+<!-- movieのpaddingに変化あり -->
+<section id="movie">
+    <Container>
+        <HeadingBeta><ImagesBeta src={movieIMG.src} />制作依頼</HeadingBeta>
+        <div class="movie-wrapping">
+            <TextBoxBeta
+                heading="様々な制作依頼ができます。"
+                text="V区民は格安の価格帯で、ご依頼いただくことができます。"
+                smallText="※依頼費用が全く無い方向けのプランもご用意しています。"
+            >
+                <li>
+                    <div class="list-wrap">
+                        <img
+                            class="images"
+                            src={homepage.src}
+                            alt=""
+                        />ホームページ制作
+                    </div>
+                </li>
+                <li>
+                    <div class="list-wrap">
+                        <img class="images" src={movieedit.src} alt="" />
+                        切り抜き動画編集など
+                    </div>
+                </li>
+                <li>
+                    <div class="list-wrap">
+                        <img class="images" src={illust.src} alt="" />
+                        イラスト制作
+                    </div>
+                </li>
+            </TextBoxBeta>
+        </div>
+    </Container>
+</section>
+
+<style>
+    #movie {
+        width: 100%;
+        padding-top: 4rem;
+    }
+    .movie-wrapping {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 2rem;
+        ul {
+            li {
+                list-style-type: none;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .list-wrap {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+    .images {
+        width: 100px;
+        height: 100px;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        #movie {
+            padding-top: 6rem;
+        }
+    }
+</style>

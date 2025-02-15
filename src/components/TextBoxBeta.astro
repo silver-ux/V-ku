@@ -1,0 +1,59 @@
+---
+const { heading, text, smallText } = Astro.props;
+---
+
+<div class="text-wrap">
+    <h3>{heading}</h3>
+    <p class="text-content">
+        {text}
+    </p>
+    <ul>
+        <slot />
+    </ul>
+    <p class="bottom">
+        <small>{smallText}</small>
+    </p>
+</div>
+
+<style>
+    .text-wrap {
+        width: 93%;
+        text-align: center;
+        margin-top: 1.5rem;
+
+        h3 {
+            padding-bottom: 10px;
+            /* 28 ~ 30px */
+            padding-left: 1em;
+            border-bottom: 1px solid #333;
+        }
+        .text-content {
+            /* 14 ~ 16px */
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+    .bottom {
+        text-align: center;
+        margin-top: 10px;
+        /* 12 ~ 16px */
+        font-size: 12px;
+    }
+
+    ul {
+        text-align: left;
+        margin-top: 1.5rem;
+        li {
+            margin: 1.7rem 0;
+            list-style-type: disc;
+            border-radius: 2px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .text-wrap {
+            width: 50%;
+        }
+    }
+    @media screen and (min-width: 1280px) {
+    }
+</style>

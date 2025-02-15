@@ -1,12 +1,14 @@
 ---
 import Header from "@components/section/top/Header.astro";
-import Anken from "@components/section/Sec1Anken/Anken.astro";
+// import Anken from "@components/section/Sec1Anken/Anken.astro";
 import Footer from "@components/section/Footer/Footer.astro";
 import Movie from "@components/section/Sec2Movie/Movie.astro";
 import Support from "@components/section/Sec3Support/Support.astro";
 import Top from "@components/section/top/Top.astro";
 import Layout from "@layouts/Layout.astro";
 import Join from "@components/section/Sec4Join/Join.astro";
+import AnkenBeta from "@components/section/Sec1Anken/AnkenBeta.astro";
+import MovieBeta from "@components/section/Sec2Movie/MovieBeta.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -15,8 +17,9 @@ import Join from "@components/section/Sec4Join/Join.astro";
 <Layout>
 	<Header />
 	<Top />
-	<Anken />
-	<Movie />
+	<!-- <Anken /> -->
+	<AnkenBeta />
+	<MovieBeta />
 	<Support />
 	<Join />
 	<Footer />
